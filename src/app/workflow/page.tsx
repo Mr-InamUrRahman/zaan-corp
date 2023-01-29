@@ -19,10 +19,10 @@ const WorkFlow =()=> {
       <ContentHeader title="Workflow"/>
 
       <div className={`${Style.workFlow} workFlow custom-scroll flex gap-1`} onScroll={handleScroll}>
-        {BoardData.map((val, I) => {
+        {BoardData.map((val:any) => {
             return(
               <Content 
-                key={I}
+                key={val.id}
                 BoardTitle={val.BoardTitle} 
                 TaskQTY={val.TaskQTY} 
                 TaskData={val.TaskData}

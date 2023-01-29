@@ -38,10 +38,10 @@ const Board =(props:any)=> {
             </div>
             <div className={`boardBody ${Style.boardBody} custom-scroll flex flex-column gap-05`}>
 
-                {props.TaskData.map((val:any, I:any) => {
+                {props.TaskData.map((val:any) => {
                         return(
                             <Task
-                                key={I}
+                                key={val.id}
                                 Circle={val.Circle}
                                 PropjectTitle={val.PropjectTitle}
                                 ProjectIcon={val.ProjectIcon}
