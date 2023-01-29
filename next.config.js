@@ -1,8 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-}
-
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */ 
+module.exports = {
+  reactStrictftde: false, 
+  webpack5: true, 
+  webpack: (config) => { 
+    config.resolve.fallback = { fs: false }; 
+  
+    return config; 
+  }}
