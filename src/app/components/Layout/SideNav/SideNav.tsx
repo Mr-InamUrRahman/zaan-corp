@@ -88,7 +88,7 @@ const SideNav =(Nav:any)=> {
             </div>
             <div className={`aside-body custom-scroll ${Style.asideBody}`}>
                 <nav className={`${Style.mainMenu}`}>
-                    {Nav.map((Nav, i) => (
+                    {Nav.map((Nav:any, i:any) => (
                         <Link  key={i} href={Nav.url} className={(activeSegment === Nav.targetSegment) ? `${Style.active}` : ''}>
                           
                             <i>{Nav.icon}</i>
