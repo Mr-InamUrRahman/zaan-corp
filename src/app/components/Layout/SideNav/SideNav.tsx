@@ -8,7 +8,7 @@ import * as Icons from '../../../resources/Icons/Icons';
 import { useEffect, useState } from 'react';
 
 
-const SideNav =(Nav)=> {
+const SideNav =(Nav:any)=> {
     const activeSegment = useSelectedLayoutSegment();
 
     Nav = [
