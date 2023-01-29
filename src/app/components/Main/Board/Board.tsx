@@ -6,7 +6,7 @@ import * as Icons from '../../../resources/Icons/Icons';
 
 
 
-const Board =(props)=> {
+const Board =(props:any)=> {
 
     return (
         <div className={`${Style.board} rounded-sm flex flex-column gap-05`}>
@@ -38,7 +38,7 @@ const Board =(props)=> {
             </div>
             <div className={`boardBody ${Style.boardBody} custom-scroll flex flex-column gap-05`}>
 
-                {props.TaskData.map((val, I) => {
+                {props.TaskData.map((val:any, I:any) => {
                         return(
                             <Task
                                 key={I}

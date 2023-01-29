@@ -1,7 +1,7 @@
 import Style from "./profile.module.css"
 import Image from 'next/image';
 
-const Profile =(props)=> {
+const Profile =(props:any)=> {
     return (
         <div className={`flex items-center gap-1 ${props.ProfileWapperClass?props.ProfileWapperClass:''} ${Style.ProfileWapperClass}`}>
             <div className={`${props.ProfileClass?props.ProfileClass:''}  ${Style.profile}`}>

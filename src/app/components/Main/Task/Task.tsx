@@ -3,7 +3,7 @@ import Style from './task.module.css'
 import Meta from "./Meta/Meta";
 import Tags from "./Tags/Tags";
 
-const Task =(props)=> {
+const Task =(props:any)=> {
     return (
         <div className={`${Style.task} flex flex-column gap-05 rounded-sm`}>
            

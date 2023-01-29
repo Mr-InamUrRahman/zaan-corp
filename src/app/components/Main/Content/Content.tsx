@@ -1,8 +1,6 @@
 import Board from "../Board/Board";
-import Style from './content.module.css'
 
-
-const Content =(props)=> {
+const Content =(props:any)=> {
     return (
       
       <Board BoardTitle={props.BoardTitle} TaskQTY={props.TaskQTY} TaskData={props.TaskData}/>

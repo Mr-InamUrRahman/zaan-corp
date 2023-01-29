@@ -7,7 +7,7 @@ import ProfileImage6 from '/public/images/profile6.png'
 import ProfileImage7 from '/public/images/profile7.png'
 import * as Icons from '../../../resources/Icons/Icons';
 
-const ContentHeader =(props)=> {
+const ContentHeader =(props:any)=> {
     return (
         <div className={`${Style.contentHeader} contentHeader flex items-center justify-between border-b`}>
             <div className={`${Style.boardHeading} flex items-center`}>

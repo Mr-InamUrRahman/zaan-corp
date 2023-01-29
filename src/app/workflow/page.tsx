@@ -7,7 +7,7 @@ import React from "react";
 
 const WorkFlow =()=> {
   const positionRef = React.useRef(0);
-  const handleScroll = (e) => {
+  const handleScroll = (e:any) => {
       const x = e.currentTarget.scrollLeft;
       if (x !== positionRef.current) {
           positionRef.current = x;
