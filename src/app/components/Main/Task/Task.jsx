@@ -1,9 +1,9 @@
-import Profile from "../../ui-controls/Profile/Profile";
+import Profile from '../../ui-controls/Profile/Profile'
 import Style from './task.module.css'
-import Meta from "./Meta/Meta";
-import Tags from "./Tags/Tags";
+import Meta from './Meta/Meta'
+import Tags from './Tags/Tags'
 
-const Task =(props:any)=> {
+const Task =(props)=> {
     return (
         <div className={`${Style.task} flex flex-column gap-05 rounded-sm`}>
            

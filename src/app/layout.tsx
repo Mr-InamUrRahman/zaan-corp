@@ -1,7 +1,7 @@
 import './resources/assets/css/styles.css'
-import Head from './components/Layout/Head/Head'
-import MainHeader from './components/Layout/MainHeader/MainHeader'
-import SideNav from './components/Layout/SideNav/SideNav'
+import Head from './components/Layout/Head/Head.'
+import MainHeader from './components/Layout/MainHeader/MainHeader.'
+import SideNav from './components/Layout/SideNav/SideNav.'
 
 import { Inter } from '@next/font/google'
 const inter = Inter({ 

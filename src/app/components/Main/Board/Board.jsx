@@ -1,12 +1,9 @@
-import Button from "../../ui-controls/Button/Button";
+import Button from "../../ui-controls/Button/Button"
 import Style from './board.module.css'
 import Task from '../Task/Task'
-import * as Icons from '../../../resources/Icons/Icons';
+import * as Icons from '../../../resources/Icons/Icons'
 
-
-
-
-const Board =(props:any)=> {
+const Board =(props)=> {
 
     return (
         <div className={`${Style.board} rounded-sm flex flex-column gap-05`}>
@@ -38,10 +35,10 @@ const Board =(props:any)=> {
             </div>
             <div className={`boardBody ${Style.boardBody} custom-scroll flex flex-column gap-05`}>
 
-                {props.TaskData.map((val:any) => {
+                {props.TaskData?.map((val, i) => {
                         return(
                             <Task
-                                key={val.id}
+                                key={i}
                                 Circle={val.Circle}
                                 PropjectTitle={val.PropjectTitle}
                                 ProjectIcon={val.ProjectIcon}

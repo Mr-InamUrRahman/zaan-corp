@@ -3,12 +3,12 @@
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation'
 import Style from './aside.module.css'
-import Button from '../../ui-controls/Button/Button';
-import * as Icons from '../../../resources/Icons/Icons';
-import { useEffect, useState } from 'react';
+import Button from '../../ui-controls/Button/Button'
+import * as Icons from '../../../resources/Icons/Icons'
+import { useEffect, useState } from 'react'
 
 
-const SideNav =(Nav:any)=> {
+const SideNav =(Nav)=> {
     const activeSegment = useSelectedLayoutSegment();
 
     Nav = [
@@ -88,8 +88,8 @@ const SideNav =(Nav:any)=> {
             </div>
             <div className={`aside-body custom-scroll ${Style.asideBody}`}>
                 <nav className={`${Style.mainMenu}`}>
-                    {Nav.map((Nav:any) => (
-                        <Link  key={Nav.id} href={Nav.url} className={(activeSegment === Nav.targetSegment) ? `${Style.active}` : ''}>
+                    {Nav.map((Nav, i) => (
+                        <Link  key={i} href={Nav.url} className={(activeSegment === Nav.targetSegment) ? `${Style.active}` : ''}>
                           
                             <i>{Nav.icon}</i>
                             <span>{Nav.title}</span>

@@ -1,9 +1,9 @@
 
 import BackLogsData from './BackLogsData'
-import Completed from './Completed';
-import InProcess from './InProcess';
-import InReview from './InReview';
-import ToDoData from './ToDoData';
+import Completed from './Completed'
+import InProcess from './InProcess'
+import InReview from './InReview'
+import ToDoData from './ToDoData'
 
 const BoardData = [
     {  

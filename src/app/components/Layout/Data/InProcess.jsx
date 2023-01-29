@@ -1,5 +1,5 @@
 import Profile from '/public/images/profile.jpg'
-import * as Icons from '../../../resources/Icons/Icons';
+import * as Icons from '../../../resources/Icons/Icons'
 
 const InProcess = [
     {  

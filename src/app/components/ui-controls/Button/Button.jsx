@@ -1,7 +1,7 @@
 
 import Style from './button.module.css'
 
-const Button =(Button:any)=> {
+const Button =(Button)=> {
   return (
 
     <button onClick={Button.Click} type={Button.Type} className={`btn ${Button.DefaultStyle? Style.btnTheme : ''} ${Button.BtnStyleClass? Button.BtnStyleClass : ''} ${Button.IconPosition? `icon-`+Button.IconPosition : ''} `}>

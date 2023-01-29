@@ -1,7 +1,7 @@
 
 import Style from './input.module.css'
 
-const Input =(Input:any)=> {
+const Input =(Input)=> {
   return (
 
    

@@ -1,13 +1,13 @@
-import Button from '../../ui-controls/Button/Button';
-import Profile from '../../ui-controls/Profile/Profile';
+import Button from '../../ui-controls/Button/Button'
+import Profile from '../../ui-controls/Profile/Profile'
 import Style from './contentHeader.module.css'
 import ProfileImage4 from '/public/images/profile4.png'
 import ProfileImage5 from '/public/images/profile5.png'
 import ProfileImage6 from '/public/images/profile6.png'
 import ProfileImage7 from '/public/images/profile7.png'
-import * as Icons from '../../../resources/Icons/Icons';
+import * as Icons from '../../../resources/Icons/Icons'
 
-const ContentHeader =(props:any)=> {
+const ContentHeader =(props)=> {
     return (
         <div className={`${Style.contentHeader} contentHeader flex items-center justify-between border-b`}>
             <div className={`${Style.boardHeading} flex items-center`}>

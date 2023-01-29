@@ -1,6 +1,6 @@
-import Board from "../Board/Board";
+import Board from "../Board/Board"
 
-const Content =(props:any)=> {
+const Content =(props)=> {
     return (
       
       <Board BoardTitle={props.BoardTitle} TaskQTY={props.TaskQTY} TaskData={props.TaskData}/>

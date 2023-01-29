@@ -1,6 +1,6 @@
-import Button from "../../../ui-controls/Button/Button";
+import Button from '../../../ui-controls/Button/Button'
 import Style from '../task.module.css'
-import * as Icons from '../../../../resources/Icons/Icons';
+import * as Icons from '../../../../resources/Icons/Icons'
 
 const Meta =()=> {
     return (

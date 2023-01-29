@@ -24,6 +24,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/Layout/Data/BoardData.jsx", "src/app/components/Layout/Data/BackLogsData.jsx", "src/app/components/ui-controls/Profile/Profile.jsx", "src/app/components/ui-controls/Input/Input.jsx", "src/app/components/ui-controls/Button/Button.jsx", "src/app/components/Main/Board/Board.jsx", "src/app/components/Main/Task/Meta/Meta.jsx", "src/app/components/Main/Task/Tags/Tags.jsx", "src/app/components/Main/Task/Task.jsx", "src/app/components/Main/ContentHeader/ContentHeader.jsx", "src/app/components/Main/Content/Content.jsx", "src/app/page.jsx", "src/app/workflow/page.jsx", "src/app/components/Layout/Data/Completed..jsx", "src/app/components/Layout/Data/InProcess..jsx", "src/app/components/Layout/Data/InReview..jsx", "src/app/components/Layout/Data/ToDoData..jsx", "src/app/components/Layout/Head/Head..jsx", "src/app/components/Layout/MainHeader/MainHeader..jsx", "src/app/components/Layout/SideNav/SideNav..jsx", "src/app/resources/Icons/Icons.jsx"],
   "exclude": ["node_modules"]
 }

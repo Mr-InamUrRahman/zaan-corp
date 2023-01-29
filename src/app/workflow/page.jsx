@@ -1,13 +1,13 @@
 "use client"
-import Content from "../components/Main/Content/Content";
-import ContentHeader from "../components/Main/ContentHeader/ContentHeader";
+import React from 'react' 
+import Content from '../components/Main/Content/Content'
+import ContentHeader from '../components/Main/ContentHeader/ContentHeader'
 import BoardData from '../components/Layout/Data/BoardData'
 import Style from './workflow.module.css'
-import React from "react";
 
 const WorkFlow =()=> {
   const positionRef = React.useRef(0);
-  const handleScroll = (e:any) => {
+  const handleScroll = (e) => {
       const x = e.currentTarget.scrollLeft;
       if (x !== positionRef.current) {
           positionRef.current = x;
@@ -15,11 +15,11 @@ const WorkFlow =()=> {
       }
   };
   return (
+    
     <div>
       <ContentHeader title="Workflow"/>
-
       <div className={`${Style.workFlow} workFlow custom-scroll flex gap-1`} onScroll={handleScroll}>
-        {BoardData.map((val:any) => {
+        {BoardData.map((val) => {
             return(
               <Content 
                 key={val.id}

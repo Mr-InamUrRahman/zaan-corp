@@ -1,11 +1,11 @@
 import Style from './mainHeader.module.css'
-import Button from '../../ui-controls/Button/Button';
-import Profile from '../../ui-controls/Profile/Profile';
-import Input from '../../ui-controls/Input/Input';
+import Button from '../../ui-controls/Button/Button'
+import Profile from '../../ui-controls/Profile/Profile'
+import Input from '../../ui-controls/Input/Input'
 import ProfileImage from '/public/images/profile.jpg'
 import ProfileImage2 from '/public/images/profile2.png'
 import ProfileImage3 from '/public/images/profile3.png'
-import * as Icons from '../../../resources/Icons/Icons';
+import * as Icons from '../../../resources/Icons/Icons'
 
 const MainHeader =()=> {
 
