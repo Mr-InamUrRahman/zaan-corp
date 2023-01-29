@@ -1,0 +1,52 @@
+.mainHeader{
+    padding-inline: 1.875rem;
+    min-height: 4.688rem;
+}
+.searchBox{
+    min-width: calc(100% - 496px);
+}
+.instructionBox button{
+    color: var(--white);
+}
+.dropDown{
+    min-height: 40px;
+    overflow: var(--hidden);
+}
+.dropDownValue{
+    background-color: rgba(7, 15, 33, 0.06);
+    padding: 0.32rem 0.5rem;
+}
+.dropDownValue .dropDownProfile span{
+    position: initial;
+    width: 24px;
+    height: 20px;
+    border-radius: 4px;
+}
+.dropDownValue .dropDownProfileWrapper{
+    position: var(--relative);
+}
+.dropDownValue .dropDownProfileWrapper:after{
+    content: '';
+    width: 1px;
+    height: var(--h-full);
+    background-color: var(--secondary);
+    opacity: 0.1;
+    position: var(--absolute);
+    inset-block: var(--zero);
+    margin: var(--auto);
+    right: -10px;
+}
+.dropDownValue .dropDownProfileWrapper:last-child:after{
+    display: var(--none);
+}
+.dropDownValue .dropDownProfileWrapper:nth-child(1) span{
+    background-color: #FAAD14;
+}
+.dropDownValue .dropDownProfileWrapper:nth-child(2) span{
+    background-color: #B0A1DF;
+}
+.dropDownIcon{
+    padding: .6rem;
+    min-height: 40px;
+    cursor: var(--pointer);
+}

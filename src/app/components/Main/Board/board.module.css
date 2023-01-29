@@ -1,0 +1,20 @@
+.board{
+    padding: .813rem 0.625rem;
+    background-color: rgba(7, 15, 33, 0.04);
+}
+.boardFilter button{
+    padding-inline: var(--zero);
+    opacity: .5;
+}
+.boardFooter button{
+    justify-content: var(--flex-end);
+    color: var(--primary);
+}
+.boardFooter button span{
+    color: var(--primary);
+}
+.boardBody{
+    height: calc(100vh - 298px);
+    overflow-y: var(--auto);
+    overflow-x: var(--hidden);
+}

@@ -1,0 +1,95 @@
+.aside{
+    position: var(--relative);
+}
+.aside.drawerOpen{
+    position: var(--relative);
+    left: var(--zero);
+    transition: 0.2s all ease;
+}
+.aside.drawerClose{
+    left: -10rem;
+    min-width: 0;
+}
+.Close{
+    position: var(--absolute);
+    left: 161px;
+    transform: rotate(180deg);
+}
+.asideHeader{
+    padding-inline-start: 1.8rem;
+    padding-inline-end: 1rem;
+    min-height: 4.688rem;
+    display: var(--flex);
+    align-items: var(--center);
+    justify-content: var(--space-between);
+}
+.asideHeader .logo{
+    font-size: var(--text-base);
+    font-weight: var(--semibold);
+    gap: .5rem;
+    padding-left: 1.5rem;
+}
+.mainMenu{
+    display: var(--flex);
+    flex-direction: var(--column);
+    gap: .5rem;
+}
+.mainMenu a{
+    display: var(--flex);
+    align-items: var(--center);
+    gap: 1rem;
+    color: var(--secondary);
+    font-size: var(--text-base);
+    opacity: .6;
+    font-weight: var(--regular);
+    padding-block: 0.75rem;
+    padding-inline: 1rem;
+    border-radius: .5rem;
+}
+.mainMenu a:last-child{
+    margin-top: 2rem;
+}
+.mainMenu a:hover,
+.mainMenu a.active{
+    background-color: var(--gray-100);
+    opacity: 1;
+}
+
+.asideBody{position: var(--relative);}
+.asideBody:after{
+    content: '';
+    height: 1px;
+    width: var(--w-full);
+    background-color: var(--secondary);
+    opacity: .08;
+    position: var(--absolute);
+    inset-inline: var(--zero);
+    bottom: 6rem;
+}
+
+@media (max-width: 1279px){
+    .aside.drawerClose{
+        position: var(--absolute);
+        left: var(--zero);
+        transition: 0.2s all ease;
+        background-color: var(--white);
+        z-index: 999;
+        inset-block: var(--zero);
+        min-width: 30%;
+    }
+    .Close{
+        left: initial;
+        right: 1rem;
+        transform: rotate(0deg);
+    }
+    .aside.drawerOpen{
+        left: -10rem;
+        min-width: var(--zero);
+        transition: initial;
+    }
+    .Open{
+        position: var(--absolute);
+        left: 161px;
+        transform: rotate(180deg);
+    }
+}

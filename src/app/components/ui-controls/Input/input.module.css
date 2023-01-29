@@ -1,0 +1,11 @@
+.inputTheme{
+    border: 1px solid var(--border-color);
+    padding-inline: 1rem;
+    border-radius: .5rem;
+    font-size: var(--text-base);
+    font-family: var(--inter);
+}
+.inputTheme input{
+    min-height: 40px;
+    width: var(--w-full);
+}

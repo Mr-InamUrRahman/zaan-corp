@@ -1,0 +1,208 @@
+:root {
+    --primary: #0E8CFF;
+    --primary-hover: #0078e5;
+    
+    --secondary: #070F21;
+    --secondary-hover: rgba(7, 15, 33, 0.10);
+
+    --gray-100: #F6F6FF;
+    --gray-200: #F9FBFE;
+   
+    --circle-red: #FF3477;
+    --circle-orange: #FF9F1A;
+    --circle-purple: #6248FF;
+    --circle-blue: #70A0FF;
+    --circle-green: #27E1BF;
+    --transparent: transparent;
+    --white: white;
+
+    --text-xs: 10px;
+    --text-sm: 12px;
+    --text-md: 14px;
+    --text-base: 16px;
+    --text-lg: 18px;
+    --text-xl: 20px;
+    --text-xxl: 22px;
+
+    --zero: 0;
+    --hidden: hidden;
+    --border-box: border-box;
+    --auto: auto;
+    --pointer: pointer;
+
+    --flex: flex;
+    --center: center;
+    --flex-start: flex-start;
+    --flex-end: flex-end;
+    --space-between: space-between;
+    --column: column;
+
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+
+    --relative: relative;
+    --absolute: absolute;
+    
+    --w-full: 100%;
+    --h-full: 100%; 
+    --cover: cover;
+    --none: none;
+
+    --border-color: rgba(7, 15, 33, 0.10);
+    --inter: '__Inter_79ed20', '__Inter_Fallback_79ed20';
+}
+* {
+    box-sizing: border-box;
+    padding: var(--zero);
+    margin: var(--zero);
+    outline: var(--none);
+}
+
+.custom-scroll::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+.custom-scroll::-webkit-scrollbar-thumb {
+    border-radius: 34px;
+    border: 7px solid var(--transparent);
+    background-clip: content-box;
+    background-color: rgb(7 15 33 / 20%);
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    background-color: var(--transparent);
+    border-radius: 0px;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: var(--hidden);
+    color: var(--secondary);
+}
+textarea,
+select,
+input,
+textarea,
+select,
+button {cursor: var(--pointer);transition: .2s all; background-color: var(--transparent); border: var(--none); border-radius: var(--zero);font-weight: var(--normal);font-family: var(--inter);height: var(--h-full);}
+::placeholder { color: var(--secondary); font-weight: var(--normal); opacity: .4;}
+a{text-decoration: var(--none);transition: .5s all;}
+i{font-size: var(--zero);}
+.w-full{width: var(--w-full);}
+
+h1{
+    font-size: var(--text-xxl);
+    font-weight: var(--semibold);
+    max-width: 230px;
+    text-overflow: ellipsis;
+    overflow: var(--hidden);
+    white-space: nowrap;
+}
+h2{
+    font-size: var(--text-md);
+    font-weight: var(--semibold);
+}
+h2>span{
+    font-size: var(--text-sm);
+    font-weight: var(--regular);
+    opacity: .5;
+}
+h3{
+    font-size: var(--text-sm);
+    font-weight: var(--medium);
+}
+ul{
+    list-style: var(--none);
+}
+.bg-primary{
+    background-color: var(--primary);
+}
+.text-white{
+    color: var(--white);
+}
+
+.flex{
+    display: var(--flex);
+}
+.flex-column{
+    flex-direction: var(--column);
+}
+.items-center{
+    align-items: var(--center);
+}
+.justify-center{
+    justify-content: var(--center);
+}
+.justify-between{
+    justify-content: var(--space-between);
+}
+.items-start{
+    align-items: var(--flex-start);
+}
+.gap-1{
+    gap: 1rem;
+}
+.gap-05 {
+    gap: .5rem;
+}
+
+.border-t{
+    border-top: 1px solid var(--border-color);
+}
+.border-b{
+    border-bottom: 1px solid var(--border-color);
+}
+.border-r{
+    border-right: 1px solid var(--border-color);
+}
+.border-l{
+    border-left: 1px solid var(--border-color);
+}
+.border{
+    border: 1px solid var(--border-color);
+}
+.rounded-sm{
+    border-radius: .5rem;
+}
+.rounded-full{
+    border-radius: 100px;
+}
+
+.circle{
+    position: var(--relative);
+}
+.circle:before{
+    content: '';
+    position: var(--absolute);
+    left: var(--zero);
+    inset-block: var(--zero);
+    border-radius: var(--w-full);
+    margin: var(--auto);
+}
+.circle-sm:before{
+    height: 6px;
+    width: 6px;
+}
+.circle-md:before{
+    height: 14px;
+    width: 14px;
+}
+.circle-red:before{
+    background-color: var(--circle-red);
+}
+.circle-orange:before{
+    background-color: var(--circle-orange);
+}
+.circle-purple:before{
+    background-color: var(--circle-purple);
+}
+.circle-blue:before{
+    background-color: var(--circle-blue);
+}
+.circle-green:before{
+    background-color: var(--circle-green);
+}
+

@@ -1,0 +1,12 @@
+.btnTheme{
+    min-width: 54px;
+    min-height: 34px;
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: var(--pointer);
+    border: 1px solid;
+    border-radius: .5rem;
+}
+.btnTheme:hover{
+    background-color: var(--primary-hover);
+}

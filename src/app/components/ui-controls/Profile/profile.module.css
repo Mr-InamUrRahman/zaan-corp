@@ -1,0 +1,34 @@
+.profile{
+    position: var(--relative);
+}
+.profile figure{
+    overflow: var(--hidden);
+    border-radius: var(--w-full);
+    border: 1px solid var(--white);
+}
+.profile.medium figure{
+    width: 30px;
+    height: 30px;
+}
+.profile figure img{
+    width: var(--w-full);
+    height: var(--h-full);
+    object-position: var(--center);
+    object-fit: var(--cover);
+}
+.profile .counter{
+    position: var(--absolute);
+    bottom: var(--zero);
+    right: var(--zero);
+    height: 14px;
+    width: 14px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: var(--text-xs);
+    border-radius: var(--w-full);
+}
+.profileWrapper h6{
+    font-size: var(--text-md);
+    font-weight: var(--regular);
+    opacity: .7;
+}

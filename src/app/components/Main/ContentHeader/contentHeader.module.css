@@ -1,0 +1,39 @@
+.contentHeader{
+    padding-inline: 1.875rem;
+    min-height: 4.25rem;
+}
+.boardHeading{
+    gap: 2rem;
+}
+.boardHeading>div{
+    position: var(--relative);
+}
+.boardHeading>div:first-child:after,
+.boardHeading>div:last-child:after{
+    display: var(--none);
+}
+.boardHeading>div:after{
+    content:'';
+    height: var(--h-full);
+    width: 1px;
+    background: var(--secondary);
+    opacity: .2;
+    position: var(--absolute);
+    inset-block: var(--zero);
+    margin: var(--auto);
+    right:-1rem;
+}
+.boardCategory {
+    gap: .3rem;
+}
+.boardCategory button{
+    background-color: var(--secondary-hover);
+    border-color: var(--white);
+    min-width: 30px;
+    min-height: 30px;
+    padding: var(--zero);
+}
+.boardInfo button{
+    min-height: 36px;
+    min-width: 36px;
+}
