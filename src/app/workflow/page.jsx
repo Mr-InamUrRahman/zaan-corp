@@ -23,6 +23,7 @@ const WorkFlow =()=> {
             return(
               <Content 
                 key={val.id}
+                Board={true}
                 BoardTitle={val.BoardTitle} 
                 TaskQTY={val.TaskQTY} 
                 TaskData={val.TaskData}
