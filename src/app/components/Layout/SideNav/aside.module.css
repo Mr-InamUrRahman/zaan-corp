@@ -55,8 +55,8 @@
     opacity: 1;
 }
 
-.asideBody{position: var(--relative);}
-.asideBody:after{
+.mainMenu{position: var(--relative);}
+.mainMenu:after{
     content: '';
     height: 1px;
     width: var(--w-full);
@@ -64,7 +64,7 @@
     opacity: .08;
     position: var(--absolute);
     inset-inline: var(--zero);
-    bottom: 6rem;
+    bottom: 62px;
 }
 
 @media (max-width: 1279px){

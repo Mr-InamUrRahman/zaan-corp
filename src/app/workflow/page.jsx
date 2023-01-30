@@ -6,23 +6,15 @@ import BoardData from '../components/Layout/Data/BoardData'
 import Style from './workflow.module.css'
 
 const WorkFlow =()=> {
-  const positionRef = React.useRef(0);
-  const handleScroll = (e) => {
-      const x = e.currentTarget.scrollLeft;
-      if (x !== positionRef.current) {
-          positionRef.current = x;
-          console.log('Horizontal scroll event occurred ...');
-      }
-  };
   return (
     
     <div>
       <ContentHeader title="Workflow"/>
-      <div className={`${Style.workFlow} workFlow custom-scroll flex gap-1`} onScroll={handleScroll}>
-        {BoardData.map((val) => {
+      <div className={`${Style.workFlow} workFlow custom-scroll flex gap-1`}>
+        {BoardData.map((val, i) => {
             return(
               <Content 
-                key={val.id}
+                key={i}
                 Board={true}
                 BoardTitle={val.BoardTitle} 
                 TaskQTY={val.TaskQTY} 
